@@ -4,5 +4,7 @@ public class Main {
         System.out.println("Hello, this is a Git test");
 
         System.out.println("Second text");
+
+        System.out.println("Third Text");
     }
 }
