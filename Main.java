@@ -1,4 +1,5 @@
 import java.util.Scanner;
+import java.util.InputMismatchException;
 
 public class Main {
 
@@ -8,13 +9,19 @@ public class Main {
 
         // Detect if user input is an even or odd number
 
-        System.out.print("Enter a number: ");
-        int input = sc.nextInt();
+        try {
+            System.out.print("Enter a number: ");
+            int input = sc.nextInt();
 
-        if (input % 2 == 0) {
-            System.out.println("You just inputed an even number");
-        } else {
-            System.out.println("The number is an odd number");
+            if (input % 2 == 0) {
+                System.out.println("You just inputed an even number");
+            }
+            if (input % 2 != 0){
+                System.out.println("The number is an odd number");
+            }
+
+        } catch (InputMismatchException e) {
+            System.err.println("Must be an Integer");
         }
 
     }
