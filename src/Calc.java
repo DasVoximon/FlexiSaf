@@ -61,6 +61,7 @@ public class Calc {
     }
 
     private static void sciCalc() {
+
         System.out.println("Sorry, nothing here yet");
     }
 
