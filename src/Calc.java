@@ -7,7 +7,6 @@ public class Calc {
 	private static int result;
 
 	public static void main(String[] args) {
-        System.out.println("Calculator by Das Voximon");
         System.out.println("1.Basic Calculator");
         System.out.println("2.Scientific Calculator");
         System.out.println("3.Currency Converter");
